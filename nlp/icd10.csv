@@ -1,0 +1,31 @@
+ICD Code,Disease Name,Description
+A00,Cholera,Infection caused by Vibrio cholerae
+A09,Infectious gastroenteritis,Diarrhea and gastroenteritis of infectious origin
+B20,HIV disease,Human immunodeficiency virus infection
+C34,Lung cancer,Malignant neoplasm of bronchus and lung
+C50,Breast cancer,Malignant neoplasm of breast
+E03.9,Hypothyroidism,Unspecified hypothyroidism
+E10,Type 1 diabetes mellitus,Insulin-dependent diabetes
+E11,Type 2 diabetes mellitus,Non–insulin-dependent diabetes
+E66,Obesity,Disorders due to excess body fat
+F32,Depressive episode,Major depressive disorder (single episode)
+F41.1,Generalized anxiety disorder,Excessive anxiety and worry
+G40,Epilepsy,Recurrent seizures
+I10,Hypertension,Essential (primary) hypertension
+I20,Angina pectoris,Chest pain due to ischemic heart disease
+I21,Acute myocardial infarction,Heart attack
+I63,Ischemic stroke,Cerebral infarction
+J06.9,Upper respiratory infection,"Acute URI, unspecified"
+J18.9,Pneumonia,"Pneumonia, unspecified organism"
+J45,Asthma,Chronic inflammatory airway disease
+K21,GERD,Gastro‑esophageal reflux disease
+K52.9,Noninfective gastroenteritis,Unspecified noninfective gastroenteritis
+M54.5,Low back pain,Lumbar pain
+M79.1,Myalgia,Muscle pain
+N30.0,Acute cystitis,Bladder infection
+N39.0,UTI,"Urinary tract infection, unspecified"
+O80,Normal delivery,Single spontaneous delivery
+R05,Cough,Persistent cough
+R10.9,Abdominal pain,"Abdominal pain, unspecified"
+R51,Headache,"Headache, unspecified"
+Z00.0,General medical examination,Routine medical check‑up
