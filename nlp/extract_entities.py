@@ -1,28 +1,43 @@
-import openai
-from dotenv import load_dotenv
 import os
+from dotenv import load_dotenv
+from openai import OpenAI
 
 load_dotenv()
-client = openai.OpenAI()
+api_key = os.getenv("OPENAI_API_KEY")
+
+client = OpenAI(api_key=api_key)
+
 
 def extract_entities(text):
     prompt = f"""
-    Extract medical information from this text.
-    Return a JSON object with fields:
-    - diseases
-    - symptoms
-    - medications
-    - lab_values
-    - notes
+You are a medical information extractor.
+Extract ONLY the following fields and return STRICT VALID JSON:
 
-    Text:
-    {text}
-    """
+{{
+  "diseases": [],
+  "symptoms": [],
+  "medications": [],
+  "lab_values": [],
+  "notes": ""
+}}
 
-    resp = client.chat.completions.create(
+Text:
+{text}
+"""
+
+    response = client.chat.completions.create(
         model="gpt-4o-mini",
-        messages=[{"role": "user", "content": prompt}],
-        temperature=0
+        messages=[
+            {"role": "system", "content": "Return ONLY valid JSON. No explanations."},
+            {"role": "user", "content": prompt}
+        ],
+        temperature=0,
+        response_format={"type": "json_object"}
     )
 
-    return resp.choices[0].message.content
+    content = response.choices[0].message.content
+
+    if not content:
+        return '{"diseases":[],"symptoms":[],"medications":[],"lab_values":[],"notes":""}'
+
+    return content
