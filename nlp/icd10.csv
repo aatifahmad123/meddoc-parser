@@ -21,7 +21,7 @@ J45,Asthma,Chronic inflammatory airway disease
 K21,GERD,Gastro‑esophageal reflux disease
 K52.9,Noninfective gastroenteritis,Unspecified noninfective gastroenteritis
 M54.5,Low back pain,Lumbar pain
-M79.1,Myalgia,Muscle pain
+B50,Malaria,Malarial Mosquito Bite
 N30.0,Acute cystitis,Bladder infection
 N39.0,UTI,"Urinary tract infection, unspecified"
 O80,Normal delivery,Single spontaneous delivery
@@ -29,3 +29,4 @@ R05,Cough,Persistent cough
 R10.9,Abdominal pain,"Abdominal pain, unspecified"
 R51,Headache,"Headache, unspecified"
 Z00.0,General medical examination,Routine medical check‑up
+R50.9,Fever,Fever Unspecified
