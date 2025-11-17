@@ -1,0 +1,1 @@
+## MedDoc Parser: Automated OCR, Medical NER and ICD-10 Coding
