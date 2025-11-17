@@ -1,7 +1,11 @@
-# nlp/paddle_ocr_vl.py
+import streamlit as st
 from paddleocr import PaddleOCR
 
-ocr = PaddleOCR(use_angle_cls=True, lang='en')
+@st.cache_resource
+def load_ocr():
+    return PaddleOCR(use_angle_cls=True, lang='en')
+
+ocr = load_ocr()
 
 def parse_document(path):
     """
