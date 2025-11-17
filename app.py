@@ -40,6 +40,6 @@ def process_medical_document(path, icd_csv_path="nlp/icd10.csv"):
 
 
 if __name__ == "__main__":
-    doc_path = "data/samples/prescription1.jpg"
+    doc_path = "data/samples/prescription3.png"
     output = process_medical_document(doc_path)
     print(json.dumps(output, indent=4))
